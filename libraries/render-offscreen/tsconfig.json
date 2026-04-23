@@ -1,0 +1,4 @@
+{
+  "extends": "@inker/web-rig/library/tsconfig.lib.json",
+  "include": ["src"]
+}

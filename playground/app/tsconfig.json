@@ -1,0 +1,10 @@
+{
+  "extends": "@inker/web-rig/library/tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
+  },
+  "include": ["src", "src/**/*.vue"]
+}

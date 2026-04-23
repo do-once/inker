@@ -1,0 +1,32 @@
+{
+  "name": "@inker/sdk",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@inker/types": "workspace:*",
+    "@inker/di": "workspace:*",
+    "@inker/util": "workspace:*",
+    "@inker/core": "workspace:*",
+    "@inker/model": "workspace:*",
+    "@inker/input-pointer": "workspace:*",
+    "@inker/render-canvas": "workspace:*",
+    "@inker/render-offscreen": "workspace:*",
+    "@inker/render-svg": "workspace:*",
+    "@inker/brush-freehand": "workspace:*",
+    "@inker/freehand": "workspace:*",
+    "@inker/compute-worker": "workspace:*",
+    "@inker/playback": "workspace:*"
+  },
+  "devDependencies": {
+    "@inker/web-rig": "workspace:*",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "happy-dom": "catalog:"
+  }
+}

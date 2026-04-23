@@ -1,0 +1,15 @@
+packages:
+  - 'shared/*'
+  - 'libraries/*'
+  - 'third-parties/*'
+  - 'playground/*'
+  - 'run-control/*'
+  - 'scripts/*'
+  - 'solutions/*'
+
+catalog:
+  typescript: 5.9.3
+  vitest: 3.0.4
+  vite: 7.3.1
+  happy-dom: 16.6.0
+  '@vitest/coverage-v8': 3.0.4

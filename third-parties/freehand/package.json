@@ -1,0 +1,17 @@
+{
+  "name": "@inker/freehand",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@inker/web-rig": "workspace:*",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "happy-dom": "catalog:"
+  }
+}

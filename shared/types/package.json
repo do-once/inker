@@ -1,0 +1,19 @@
+{
+  "name": "@inker/types",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@inker/freehand": "workspace:*"
+  },
+  "devDependencies": {
+    "@inker/web-rig": "workspace:*",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

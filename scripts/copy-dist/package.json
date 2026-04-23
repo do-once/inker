@@ -1,0 +1,19 @@
+{
+  "name": "@inker/copy-dist",
+  "version": "0.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fs-extra": "11.3.0",
+    "glob": "11.0.1",
+    "chalk": "5.4.1",
+    "yaml": "2.7.1"
+  }
+}
