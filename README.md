@@ -177,26 +177,16 @@ const editor = Inker.builder()
 
 ```
 inker/
-├── shared/                  # 共享基础设施
-│   ├── types/               # @inker/types — 纯接口，零 runtime
-│   ├── di/                  # @inker/di — 轻量 DI 容器
-│   └── util/                # @inker/util — 工具函数
-├── libraries/               # 核心功能库
-│   ├── core/                # @inker/core — EditorKernel + EventBus + 抽象基类
-│   ├── model/               # @inker/model — StrokeDocument + CoordinateSystem
-│   ├── input-pointer/       # @inker/input-pointer — Pointer Events 输入适配器
-│   ├── render-canvas/       # @inker/render-canvas — Canvas 2D 双层渲染
-│   ├── render-offscreen/    # @inker/render-offscreen — OffscreenCanvas Worker 渲染
-│   ├── render-svg/          # @inker/render-svg — SVG 渲染（预留）
-│   ├── brush-freehand/      # @inker/brush-freehand — 笔刷处理器 + 橡皮擦
-│   ├── render-protocol/     # @inker/render-protocol — Worker 通信协议
-│   ├── playback/            # @inker/playback — 笔迹回放
-│   └── sdk/                 # @inker/sdk — 门面包（唯一对外入口）
-├── third-parties/           # 第三方源码 fork
-│   └── freehand/            # @inker/freehand — perfect-freehand
-├── playground/              # 调试应用
-│   └── app/                 # Vue 3 + Vite 调试应用
-└── run-control/             # 共享配置（tsconfig、vitest、vite）
+├── shared/                  # 共享基础设施（types、di、util）
+├── libraries/               # 核心功能库（core、model、输入/渲染适配器、笔刷、回放、sdk）
+├── third-parties/           # 第三方源码 fork（perfect-freehand）
+├── solutions/               # 业务场景方案（识别数据准备等，不发布到 SDK）
+├── playground/              # Vue 3 交互式调试应用
+├── e2e/                     # Playwright 端到端测试
+├── docs/                    # 设计文档与规格说明
+├── scripts/                 # 构建脚本（产物拷贝等）
+├── run-control/             # 共享配置（tsconfig、vitest、vite）
+└── dist/                    # 构建产物（ES + UMD + .d.ts）
 ```
 
 ## 核心设计原则
